@@ -3,9 +3,10 @@ import AliceCarousel from 'react-alice-carousel';
 import { HomeCarouselData } from './HomeCarouselData';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
+const items = HomeCarouselData.map((item) => <img className='cursor-pointer' role='presentation' alt="" src= {item.image}/>)
 
 const HomeCarousel = () => {
-  const items = HomeCarouselData.map((item) => <img className='cursor-pointer' role='presentation' alt="" src= {item.image}/>)
+  
     return(
         <AliceCarousel
           items={items}
